@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eportals Computer Training Center</title>
+    <link rel="stylesheet" href="styles.css">
+      
+</head>
+<body>
+
+<header>
+    <h1>Eportals Computer Training Center</h1>
+    
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#curriculum">Training Curriculum</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+<section id="welcome">
+    <h2>Welcome to Eportals Computer Training Center</h2>
+    <p>Affordable, professional Computer Training services for children, students, professionals and intermediate tech enthusiasts.</p>
+    <img src="About pic.png" alt="Girl in a jacket" style="width:1200px;height:600px;">
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Eportals, we are dedicated to bridging the digital skills gap by offering affordable, quality computer training tailored for beginners, students, professionals, and everyone interested in building a career in tech fields. 
+        <p>Eportals Computer Training Center is a full service Computer Center registered with the Corporate Affairs Commission with registration number BN 3469159, established to provide top-notch Computer Training services in Abuja. With Qualified, passionate and dedicated Tutors, modern gadjets and a robust curriculum, Eportals is set to be the gateway to essential digital skills and career empowerment hub in Abuja.</p>
+        <img src="Computer Training pics.png" alt="A computer" style="width:1200px;height:600px;"><br>
+    </section>
+
+<section id="curriculum">
+    <h2>Training Curriculum</h2>
+    <p>Our curriculum is structured to cover fundamental to advanced topics across various tech areas. Each course is designed with real-world applications in mind, ensuring students can put their skills to use immediately...</p>
+    <img src="Features.png" alt="A computer" style="width:1200px;height:600px;"><br>
+    <p>This training module highlights the scope of the course for Computer training at basic to intermediate level. Its structuring revolves around conceptual approach. The major areas covered in the entire syllabus include:</p>
+    <h2>Our Curriculum includes:</h2>
+    <ul>     
+    <li>Introduction to Computers</li>
+        <li>Computer Appreciation</li>
+        <li>Microsoft Office Tools</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>PowerPoint</li>
+        <li>Desktop Publishing</li>
+        <li>Graphic Design / Corel Draw</li>
+        <li>Web Design and Development</li>
+        <li>Digital Literacy and Online Etiquette</li>
+        <li>Coding for Beginners</li>
+    </ul>
+         <!-- Using the a tag with href 
+        and download attributes -->
+        <a href="EPORTALS TRAINING CURRICULUM.pdf" view>
+            <!-- Add this new button to trigger document download -->
+    <button id="download-btn">Click here to Download the Curriculum</button>
+                
+        </a>
+   <h2>Objectives</h2> 
+    <p>The objectives of our trainings are to enhance students’ understanding, knowledge and acquisition of:
+        <ul>
+        <li> 1.	Basic concepts of computers and its operations;</li>
+     <li> 2.	Manipulative, computational and problem-solving skills;</li>
+ <li> 3.	Application of software packages;</li>
+ <li>  4.	Operation of computer - related simple devices;</li>
+ <li>   5.	On-line skills and their applications;</li>
+ <li>   6.	Safe attitudes and good practices on effective use of computer;</li>
+ <li>   7.	Potentials for higher studies in Computer related areas.</li>
+     </ul>    
+     </p>
+
+     <h2>Coding Education Services for Schools</h2>
+     <p>We offer Coding Education Services to Schools at an affordable fee</p>
+     <p>Browse through our Proposal for Coding Education Services for Schools</p>
+           <!-- Using the a tag with href 
+        and download attributes -->
+        <a href="Proposal to Offer Coding Education Services.pdf" view>
+        <!-- Add this new button to trigger document download -->
+<button id="download-btn">Click here to Download the Proposal</button>
+            
+    </a>
+    </section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to start your tech journey with Eportals? We’d love to hear from you!</p>
+    <div class="form-container">
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="full_name" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="phone">Phone No</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="qualification">Educational Qualification</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="duration">Duration of Training</label>
+            <select id="duration" name="duration" required>
+                <option value="1 month">1 Month</option>
+                <option value="3 months">3 Months</option>
+                <option value="6 months">6 Months</option>
+            </select>
+
+            <label for="sponsor">Sponsor</label>
+            <input type="text" id="sponsor" name="sponsor" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<body>
+    <?php if (isset($_GET['success'])): ?>
+        <p>Thank you! Your submission was successful.</p>
+    <?php endif; ?>
+</body>
+<footer>
+    <p1>&copy; 2024 Eportals Computer Training Center. All rights reserved.</p1><br>
+    <p1>Address: Plot 57B Aco/AMAC Estate, Airport Road, Abuja F.C.T</p1><br>
+    <P1>Phone: 08037814743 08032813461</P1><br>
+    <p1>Email: eportalscomputerservices@gmail.com</p1>
+</footer>
+
+</body>
+</html>
