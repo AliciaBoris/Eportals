@@ -1,3 +1,59 @@
+img {
+    max-width: 100%; /* Ensures the image doesn’t exceed the width of its container */
+    height: auto;   /* Maintains the aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    margin: 0 auto; /* Centers the image */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* Ensuring responsive layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Styling for footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive layout for sections */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
   body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
