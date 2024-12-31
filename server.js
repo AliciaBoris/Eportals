@@ -10,6 +10,8 @@ const port = 3000;
 // Middleware
 app.use(bodyParser.json());
 app.use(cors()); // Allow all origins
+app.options('*', cors());
+
 
 // For stricter control, allow only the frontend origin:
 // app.use(cors({ origin: 'http://127.0.0.1:3000' }));
@@ -33,9 +35,12 @@ db.connect((err) => {
 
 // Endpoint to handle form submission
 app.post('/submit-form', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    
     const { full_name, address, phone, email, qualification, duration, sponsor } = req.body;
 
-    // Insert form data into the database
     const query = `
         INSERT INTO students (full_name, address, phone, email, qualification, duration, sponsor)
         VALUES (?, ?, ?, ?, ?, ?, ?)
