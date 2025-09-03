@@ -20,7 +20,7 @@ app.options('*', cors());
 const db = mysql2.createConnection({
     host: 'localhost', // Replace with your MySQL host
     user: 'root',      // Replace with your MySQL username
-    password: '#85CHigozie', // Replace with your MySQL password
+    password: , // Replace with your MySQL password
     database: 'eportalsdb'   // Replace with your database name
 });
 
@@ -61,3 +61,4 @@ app.post('/submit-form', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
